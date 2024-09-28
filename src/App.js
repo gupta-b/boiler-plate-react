@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import LanguageSelector from "./components/language-selector";
+import {Trans, useTranslation} from "react-i18next";
+import "./App.css";
 
-function App() {
+const App = () => {
+  const {t} = useTranslation();
+  const {line1, line2} = t("description", {channel: "RoadsideCoder"});
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <LanguageSelector />
+      <h1>{t("greeting")}</h1>
+      <span>
+        <Trans
+          // i18nKey={"description.line1"}
+          i18nKey={line1}
+          values={{
+            channel: "RoadsideCoder",
+          }}
+          components={{1: <b />}}
+        ></Trans>
+      </span>
+      <span>{line2}</span>
+      {/* <span>{t("greeting.key", "can't load")}</span> */}
     </div>
   );
-}
+};
 
 export default App;

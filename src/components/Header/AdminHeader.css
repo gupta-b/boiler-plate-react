@@ -1,0 +1,30 @@
+
+header.admin-header{
+  width: 100%;
+  height: 70px;
+  background: #fff;
+  
+}
+header.admin-header .logo{
+  text-decoration: none;
+}
+header.admin-header .logo span{
+  color:#292929;  
+  font-weight: 800;
+  font-size: medium;
+}
+header.admin-header .logo img{
+  width: 50px;
+}
+header.admin-header .row{
+  margin: 0px;
+}
+
+header button.rounded-circle {
+  min-width: 40px;
+  width: 40px;
+  height: 40px;
+  background: #f0f5ff;
+  color:#292929;
+  font-size: 18px;
+}

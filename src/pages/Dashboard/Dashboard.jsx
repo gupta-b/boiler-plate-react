@@ -1,9 +1,9 @@
-
+import {AdminHeader} from '../../components/Header';
 
 const Dashboard = () => {
     return (
     <>
-        Dashboard Page
+        <AdminHeader />
     </>);
 }
 

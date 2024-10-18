@@ -1,7 +1,9 @@
 import SearchBox from "./SearchBox";
-import {AdminHeader, Header} from "./Header/AdminHeader";
+import Slider from "./Slider";
+import {AdminHeader, Header} from "./Header";
 export {
     SearchBox,
     Header,
-    AdminHeader
+    AdminHeader,
+    Slider
 }

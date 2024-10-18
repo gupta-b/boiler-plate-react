@@ -1,9 +1,10 @@
-import Header from '../../components/Header';
+import {Header, Slider} from '../../components';
 
 const HomePage = () => {
     return (
     <>
         <Header />
+        <Slider />
     </>);
 }
 

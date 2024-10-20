@@ -4,13 +4,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import './swiper.css';
 import 'swiper/css';
+import 'swiper/css/effect-cards';
 import { useEffect } from 'react';
 
 export default () => {
   return (
     <Swiper
         className='swiper'
-        effect= {"cards"}
+        effect={"cards"}
         grabCursor= {true}
         initialSlide= {2}
         speed= {500}

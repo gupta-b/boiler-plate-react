@@ -1,4 +1,4 @@
-import {AdminHeader} from '../../components/Header';
+import {AdminHeader} from '../../components';
 
 const Dashboard = () => {
     return (

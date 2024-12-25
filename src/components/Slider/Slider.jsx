@@ -4,8 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import './swiper.css';
 import 'swiper/css';
-import 'swiper/css/effect-cards';
-import { useEffect } from 'react';
+// import 'swiper/css/effect-cards';
 
 export default () => {
   return (
@@ -20,6 +19,7 @@ export default () => {
     //   spaceBetween={50}
     //   slidesPerView={3}
       onSlideChange={() => console.log('slide change')}
+      onSlideEnd={() => console.log('slide end')}
       onSwiper={(swiper) => console.log(swiper)}
     >
         <SwiperSlide>

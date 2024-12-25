@@ -1,9 +1,15 @@
 import SearchBox from "./SearchBox";
 import Slider from "./Slider";
-import {AdminHeader, Header} from "./Header";
+import Header from "./Header";
+import AdminHeader from "./AdminHeader";
+import ProfileMenu from "./ProfileMenu";
+import NotificationMenu from "./NotificationMenu";
+
 export {
     SearchBox,
     Header,
     AdminHeader,
+    ProfileMenu,
+    NotificationMenu,
     Slider
 }

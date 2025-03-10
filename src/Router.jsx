@@ -12,6 +12,7 @@ const Router = () => {
         <Routes>
           <Route path="/" exact={true} element={<HomePage />}></Route>
           <Route path="/Dashboard" exact={true} element={<Dashboard />}></Route>
+          <Route path="/Admin" exact={true} element={<Dashboard />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
